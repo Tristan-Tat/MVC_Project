@@ -12,6 +12,8 @@ namespace MVC_Project.Models
     {
         Id = id; Name = name; Price = price;
     }
-    
+
+        public override string ToString() => $"Item#{Id} / {Name} / {Price}";
+
     }
 }
