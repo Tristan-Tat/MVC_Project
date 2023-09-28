@@ -1,5 +1,6 @@
 ﻿using Microsoft.AspNetCore.Identity.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore;
+using MVC_Project.Models;
 
 namespace MVC_Project.Data
 {
@@ -9,5 +10,6 @@ namespace MVC_Project.Data
             : base(options)
         {
         }
+        public DbSet<MVC_Project.Models.ItemModel>? ItemModel { get; set; }
     }
 }
